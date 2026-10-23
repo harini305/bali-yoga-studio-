@@ -1,0 +1,422 @@
+{
+"about/garden": [
+711,
+533
+],
+"about/story": [
+426,
+533
+],
+"about/video-poster": [
+800,
+450
+],
+"classes/why": [
+522,
+652
+],
+"courses/200-hour-kundalini": [
+1240,
+930
+],
+"courses/200-hour-kundalini-2": [
+888,
+666
+],
+"courses/200-hour-yoga": [
+1240,
+930
+],
+"courses/200-hour-yoga-2": [
+888,
+666
+],
+"courses/300-hour-yoga": [
+1240,
+930
+],
+"courses/300-hour-yoga-2": [
+888,
+666
+],
+"courses/500-hour-yoga": [
+1240,
+930
+],
+"courses/500-hour-yoga-2": [
+888,
+666
+],
+"courses/aerial-yoga": [
+1240,
+930
+],
+"courses/aerial-yoga-2": [
+711,
+533
+],
+"courses/sound-healing": [
+889,
+667
+],
+"courses/sound-healing-2": [
+889,
+667
+],
+"courses/yin-yoga": [
+1240,
+930
+],
+"courses/yin-yoga-2": [
+888,
+666
+],
+"gallery/events-1": [
+1000,
+666
+],
+"gallery/events-2": [
+800,
+533
+],
+"gallery/events-3": [
+800,
+500
+],
+"gallery/events-4": [
+800,
+534
+],
+"gallery/events-5": [
+800,
+533
+],
+"gallery/food-1": [
+900,
+601
+],
+"gallery/food-2": [
+1000,
+667
+],
+"gallery/food-3": [
+1000,
+667
+],
+"gallery/food-4": [
+1000,
+668
+],
+"gallery/food-5": [
+1000,
+667
+],
+"gallery/stay-1": [
+600,
+400
+],
+"gallery/stay-2": [
+600,
+400
+],
+"gallery/stay-3": [
+600,
+400
+],
+"gallery/stay-4": [
+600,
+400
+],
+"gallery/stay-5": [
+600,
+400
+],
+"gallery/wellness-1": [
+1000,
+667
+],
+"gallery/wellness-2": [
+800,
+533
+],
+"gallery/wellness-3": [
+800,
+534
+],
+"gallery/wellness-4": [
+800,
+533
+],
+"gallery/yoga-1": [
+800,
+1200
+],
+"gallery/yoga-10": [
+1400,
+714
+],
+"gallery/yoga-2": [
+800,
+533
+],
+"gallery/yoga-3": [
+800,
+533
+],
+"gallery/yoga-4": [
+800,
+533
+],
+"gallery/yoga-5": [
+800,
+533
+],
+"gallery/yoga-6": [
+800,
+1200
+],
+"gallery/yoga-7": [
+800,
+533
+],
+"gallery/yoga-8": [
+800,
+533
+],
+"gallery/yoga-9": [
+800,
+533
+],
+"header/about": [
+1240,
+930
+],
+"header/classes": [
+1240,
+930
+],
+"header/contact": [
+1240,
+930
+],
+"header/faq": [
+1240,
+930
+],
+"header/gallery": [
+1240,
+930
+],
+"header/retreats": [
+1240,
+930
+],
+"header/teachers": [
+1240,
+930
+],
+"header/training": [
+1240,
+930
+],
+"header/wellness": [
+1240,
+930
+],
+"header/workshops": [
+1240,
+930
+],
+"home/finale": [
+818,
+1022
+],
+"home/food": [
+889,
+667
+],
+"home/garden": [
+800,
+533
+],
+"home/hero": [
+1002,
+1253
+],
+"home/kirtan": [
+720,
+540
+],
+"home/room": [
+600,
+400
+],
+"home/schedule": [
+960,
+1280
+],
+"retreats/half-day": [
+711,
+533
+],
+"retreats/half-day-2": [
+711,
+533
+],
+"retreats/half-day-arch": [
+900,
+1125
+],
+"retreats/one-day": [
+711,
+533
+],
+"retreats/one-day-2": [
+711,
+533
+],
+"retreats/one-day-arch": [
+900,
+1125
+],
+"retreats/panchakarma": [
+711,
+533
+],
+"retreats/panchakarma-2": [
+712,
+534
+],
+"retreats/panchakarma-arch": [
+426,
+533
+],
+"retreats/senior": [
+711,
+533
+],
+"retreats/senior-2": [
+711,
+533
+],
+"retreats/senior-arch": [
+426,
+533
+],
+"retreats/women": [
+1240,
+930
+],
+"retreats/women-2": [
+800,
+600
+],
+"retreats/women-arch": [
+900,
+1125
+],
+"teachers/guna-ji": [
+440,
+440
+],
+"teachers/mandeep-bhatt": [
+400,
+400
+],
+"teachers/sujata-ray": [
+440,
+440
+],
+"teachers/teacher-img-akshat": [
+400,
+400
+],
+"teachers/teacher-img-hari-dharma": [
+400,
+400
+],
+"teachers/yogi-ashutosh-mishra": [
+440,
+440
+],
+"teachers/yogi-naveen": [
+440,
+440
+],
+"teachers/yogi-rohit-kumar": [
+400,
+400
+],
+"teachers/yogi-sunil": [
+400,
+400
+],
+"wellness/abhyanga": [
+533,
+400
+],
+"wellness/balinese": [
+600,
+450
+],
+"wellness/deep-tissue": [
+600,
+450
+],
+"wellness/facial": [
+533,
+400
+],
+"wellness/reiki": [
+533,
+400
+],
+"wellness/sound": [
+600,
+450
+],
+"wellness/thai": [
+600,
+450
+],
+"workshops/ayurveda": [
+1240,
+930
+],
+"workshops/ayurveda-2": [
+800,
+600
+],
+"workshops/breathwork": [
+1240,
+930
+],
+"workshops/breathwork-2": [
+711,
+533
+],
+"workshops/kirtan": [
+1240,
+930
+],
+"workshops/kirtan-2": [
+888,
+666
+],
+"workshops/yin": [
+1240,
+930
+],
+"workshops/yin-2": [
+711,
+533
+],
+"workshops/ytt-intro": [
+711,
+533
+],
+"workshops/ytt-intro-2": [
+900,
+675
+]
+}

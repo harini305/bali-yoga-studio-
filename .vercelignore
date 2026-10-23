@@ -1,0 +1,6 @@
+# Only the app, its components, data, public assets and config are deployed.
+docs/
+scripts/
+*.md
+.next/
+node_modules/

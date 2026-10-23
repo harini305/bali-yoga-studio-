@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.vercel/
+.DS_Store
+*.log
+.env*.local
+
+# Phase 1 audit evidence: large and not used by the site. The written audit
+# reports (docs/source-audit/*.md, *.csv) are kept in the repository.
+docs/source-audit/original-assets/
+docs/source-audit/screenshots/
+docs/source-audit/data/
