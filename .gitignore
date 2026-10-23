@@ -11,3 +11,6 @@ out/
 docs/source-audit/original-assets/
 docs/source-audit/screenshots/
 docs/source-audit/data/
+
+.vercel
+.env*
