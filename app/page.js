@@ -15,13 +15,14 @@ export const metadata = {
     'A sanctuary for authentic yoga and holistic healing in Ubud, Bali: daily drop-in classes, yoga teacher training, retreats, workshops and Ayurvedic wellness.',
 };
 
+// Small photo tiles reuse existing image derivatives (preset + width picks the file).
 const programmes = [
-  { label: 'Daily yoga classes', href: '/daily-classes' },
-  { label: 'Teacher training', href: '/teacher-training' },
-  { label: 'Healing retreats', href: '/retreats' },
-  { label: 'Workshops & kirtan', href: '/workshops' },
-  { label: 'Reiki & sound healing', href: '/teacher-training/sound-healing' },
-  { label: 'Massage & Ayurveda', href: '/wellness' },
+  { label: 'Daily classes', href: '/daily-classes', img: '/img/header/classes', preset: 'hero', w: 720 },
+  { label: 'Teacher training', href: '/teacher-training', img: '/img/header/training', preset: 'hero', w: 720 },
+  { label: 'Retreats', href: '/retreats', img: '/img/retreats/one-day', preset: 'card', w: 560 },
+  { label: 'Workshops & kirtan', href: '/workshops', img: '/img/workshops/kirtan-2', preset: 'card', w: 560 },
+  { label: 'Reiki & sound', href: '/teacher-training/sound-healing', img: '/img/wellness/sound' },
+  { label: 'Massage & Ayurveda', href: '/wellness', img: '/img/wellness/balinese' },
 ];
 
 const featured = ['200-hour-yoga', '300-hour-yoga', '500-hour-yoga'].map(getCourse);
@@ -107,25 +108,25 @@ export default function Home() {
 
       {/* Introduction */}
       <section className="section">
-        <div className="container split split--top">
-          <div data-reveal data-pin>
+        <div className="container">
+          <div className="intro-head" data-reveal>
             <h2>A second home for seekers from around the world</h2>
+            <p>A shala in the lush heart of Ubud, built on authentic healing. Choose where to begin.</p>
           </div>
-          <div data-reveal>
-            <p className="intro__statement">
-              Nestled in the lush, spiritual heart of Ubud, our shala is more than a place to practise asanas. It is a
-              community built on authentic healing — somewhere to leave your worries at the door.
-            </p>
-            <ul className="programmes" data-stagger>
-              {programmes.map((p) => (
-                <li key={p.href}>
-                  <Link href={p.href}>
+          <ul className="explore" data-stagger>
+            {programmes.map((p) => (
+              <li key={p.href}>
+                <Link href={p.href} className="explore__tile">
+                  <span className="explore__media">
+                    <Picture src={p.img} alt="" preset={p.preset} widths={p.w ? [p.w] : undefined} sizes="200px" />
+                  </span>
+                  <span className="explore__label">
                     {p.label} <ArrowRight />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -365,15 +366,26 @@ export default function Home() {
           <div className="section-head" data-reveal>
             <h2>In our guests’ words</h2>
           </div>
-          <div className="quotes" data-stagger>
+          <div className="review-cards" data-stagger>
             {reviews.map((r) => (
-              <figure className="quote" key={r.name}>
+              <figure className="review-card" key={r.name}>
+                <span className="review-card__mark" aria-hidden="true">
+                  “
+                </span>
                 <blockquote>
-                  <p>“{r.text}”</p>
+                  <p>{r.text}</p>
                 </blockquote>
                 <figcaption>
-                  {r.name}
-                  <span>{r.from}</span>
+                  <span className="review-card__avatar" aria-hidden="true">
+                    {r.name
+                      .split(' ')
+                      .map((n) => n[0])
+                      .join('')}
+                  </span>
+                  <span>
+                    <strong>{r.name}</strong>
+                    <span>{r.from}</span>
+                  </span>
                 </figcaption>
               </figure>
             ))}

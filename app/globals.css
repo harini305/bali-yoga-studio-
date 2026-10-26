@@ -3385,3 +3385,203 @@ body.menu-open {
     margin-bottom: 1rem;
   }
 }
+
+/* ==========================================================================
+   Home: explore tiles
+   ========================================================================== */
+.explore {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 12px;
+  list-style: none;
+}
+
+.explore__tile {
+  display: block;
+  text-decoration: none;
+}
+
+.explore__media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--sand);
+}
+
+.explore__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease);
+}
+
+.explore__tile:hover .explore__media img {
+  transform: scale(1.06);
+}
+
+.explore__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.explore__label svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--amber-ink);
+  transition: transform 0.3s var(--ease);
+}
+
+.explore__tile:hover .explore__label svg {
+  transform: translateX(4px);
+}
+
+@media (min-width: 640px) {
+  .explore {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .explore {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* ==========================================================================
+   Home: review cards
+   ========================================================================== */
+.review-cards {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .review-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+.review-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: clamp(24px, 3vw, 36px);
+  border-radius: 14px;
+  background: var(--paper);
+  border: 1px solid var(--sand-deep);
+  box-shadow: 0 12px 30px rgba(24, 24, 24, 0.05);
+}
+
+.review-card__mark {
+  display: block;
+  height: 0.55em;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--saffron);
+}
+
+.review-card blockquote {
+  margin: 0 0 24px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.review-card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.review-card figcaption strong {
+  display: block;
+  font-weight: 700;
+}
+
+.review-card figcaption span span {
+  display: block;
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+
+.review-card__avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Intro heading: one line, sentence beneath, sitting on the tiles */
+.intro-head {
+  margin-bottom: 24px;
+}
+
+.intro-head h2 {
+  font-size: clamp(1.9rem, 1.2rem + 2.2vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.intro-head p {
+  max-width: 72ch;
+  color: var(--muted);
+  font-size: var(--step-1);
+}
+
+/* ==========================================================================
+   Hero sized to the screen (below the sticky header)
+   ========================================================================== */
+@media (min-width: 960px) {
+  .hero__grid {
+    min-height: min(calc(100vh - var(--header-h)), 1000px);
+    min-height: min(calc(100svh - var(--header-h)), 1000px);
+    padding-block: 40px 48px;
+  }
+
+  /* The arch scales with the window height so it never runs off screen. */
+  .hero__media {
+    width: min(100%, 520px, calc((100svh - var(--header-h) - 120px) * 0.8));
+  }
+}
+
+@media (min-width: 960px) and (max-height: 880px) {
+  .hero__title {
+    font-size: clamp(2.8rem, 1.6rem + 3.6vw, 5rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero__lead {
+    margin-bottom: 1.5rem;
+  }
+
+  .today {
+    margin-top: 1.75rem;
+  }
+}
+
+@media (min-width: 960px) and (max-height: 720px) {
+  .today {
+    display: none;
+  }
+}
